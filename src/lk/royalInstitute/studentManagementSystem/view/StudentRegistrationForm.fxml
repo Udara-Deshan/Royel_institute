@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="710.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.royalInstitute.studentManagementSystem.controller.StudentRegistrationFormController">
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Student Registation">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Separator prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets top="16.0" />
+               </HBox.margin>
+            </Separator>
+         </children>
+         <BorderPane.margin>
+            <Insets top="15.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox spacing="15.0">
+               <children>
+                  <Label text="Student ID">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField id="txtSupplierID" fx:id="txtStudentID" prefHeight="0.0" promptText="Student ID">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="26.0" top="4.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label layoutX="30.0" layoutY="20.0" text="Reg No" visible="false">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="6.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField id="txtSupplierID" fx:id="txtRegNo" layoutX="147.0" layoutY="14.0" prefHeight="0.0" promptText="Reg No" visible="false">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label text="Date">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXDatePicker fx:id="dtAddedDate" prefHeight="37.0" prefWidth="237.0">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXDatePicker>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox spacing="15.0">
+               <children>
+                  <Label text="Details">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Separator prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Separator>
+               </children>
+            </HBox>
+            <HBox spacing="15.0">
+               <children>
+                  <Label text="Name" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="6.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtName" prefHeight="0.0" promptText="Name" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="68.0" right="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox spacing="15.0">
+               <children>
+                  <Label text="Date Of Birth">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="6.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXDatePicker fx:id="dtDOB" prefHeight="27.0" prefWidth="229.0">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </JFXDatePicker>
+                  <Label text="Gender">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="195.0" top="6.0" />
+                     </HBox.margin>
+                  </Label>
+                  <RadioButton fx:id="rabMale" mnemonicParsing="false" text="Male">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="23.0" right="20.0" top="6.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="rabFemale" mnemonicParsing="false" text="Female">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="6.0" />
+                     </HBox.margin>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <HBox spacing="15.0">
+               <children>
+                  <Label text="Contact Info">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Separator prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Separator>
+               </children>
+            </HBox>
+            <HBox spacing="15.0">
+               <children>
+                  <Label text="Address" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="6.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtAddress" prefHeight="0.0" promptText="Address" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="57.0" right="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox spacing="15.0">
+               <children>
+                  <Label text="Mobile Number" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="6.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtMobileNumber" minWidth="-Infinity" prefHeight="0.0" prefWidth="275.0" promptText="Mobile Number">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="2.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="261.0" spacing="15.0">
+               <children>
+                  <Label text="Program Info">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Separator prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Separator>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="278.0" spacing="15.0">
+               <children>
+                  <JFXComboBox fx:id="cmbTrainingProgram" labelFloat="true" onAction="#cmdSelectProgram" prefHeight="39.0" prefWidth="748.0" promptText="Tranning Program">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+                  <JFXTextField fx:id="txtProgramID" editable="false" labelFloat="true" layoutX="793.0" layoutY="10.0" prefHeight="37.0" prefWidth="184.0" promptText="Program ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtDuration" editable="false" labelFloat="true" prefHeight="37.0" prefWidth="184.0" promptText="Duration">
+                     <font>
+                        <Font size="15.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="txtFee" editable="false" labelFloat="true" layoutX="793.0" layoutY="10.0" prefHeight="37.0" prefWidth="167.0" promptText="Fee (LKR)">
+                     <font>
+                        <Font size="15.0" />
+                     </font></JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets right="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="231.0" spacing="15.0">
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <JFXButton fx:id="btnAddProgram" onAction="#btnAddProgram" prefHeight="38.0" prefWidth="144.0" style="-fx-background-color: #00A2D3;" text="Add" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="409.0" spacing="15.0">
+               <children>
+                  <TableView fx:id="tblProgram" prefHeight="200.0" prefWidth="987.0">
+                    <columns>
+                      <TableColumn fx:id="colProgramID" prefWidth="75.0" text="Program ID" />
+                      <TableColumn fx:id="colProgram" prefWidth="75.0" text="Program" />
+                        <TableColumn fx:id="colDuration" prefWidth="75.0" text="Duration" />
+                        <TableColumn fx:id="colFee" prefWidth="75.0" text="Fee (LKR)" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TableView>
+                  <VBox prefHeight="200.0" prefWidth="148.0">
+                     <children>
+                        <Region layoutX="10.0" layoutY="64.0" prefHeight="43.0" prefWidth="148.0" />
+                        <JFXTextField fx:id="txtTotalFee" editable="false" labelFloat="true" prefHeight="53.0" prefWidth="148.0" promptText="Total Fee">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <Region prefHeight="32.0" prefWidth="148.0" />
+                        <JFXButton fx:id="btnRemoveProgram" onAction="#btnRemoveProgram" prefHeight="32.0" prefWidth="134.0" style="-fx-background-color: #f6416c;" text="Remove" textAlignment="CENTER">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="44.0" prefWidth="602.0" HBox.hgrow="ALWAYS" />
+            <JFXButton fx:id="btnRegister" onAction="#btnRegister" prefHeight="44.0" prefWidth="185.0" style="-fx-background-color: #17b978;" text="Register">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <Region layoutX="10.0" layoutY="10.0" prefHeight="44.0" prefWidth="132.0" HBox.hgrow="ALWAYS" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>

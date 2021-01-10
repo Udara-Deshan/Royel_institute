@@ -1,0 +1,22 @@
+.sidebar{
+    -fx-background-color:#333645;
+}
+.sidebar-btn{
+    -fx-border-color: white;
+}
+.button:hover{
+    -fx-border-color: #00A2D3;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+.button:pressed{
+    -fx-scale-x: 0.9;
+    -fx-scale-y: 0.9;
+}
+.button{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+.sidebar-btn:selected {
+    -fx-background-color:#00A2D3;
+}

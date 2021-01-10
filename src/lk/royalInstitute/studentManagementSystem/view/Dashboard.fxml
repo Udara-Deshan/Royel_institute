@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1366.0" stylesheets="@../stylesheet/dashborad.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.royalInstitute.studentManagementSystem.controller.DashboardController">
+   <left>
+      <VBox prefHeight="720.0" prefWidth="200.0" spacing="35.0" styleClass="sidebar" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Text fill="#fff6f6" onMouseClicked="#loadDashboard" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Royal Institute" textAlignment="CENTER" wrappingWidth="177.5">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Text>
+            <Button fx:id="btnRegistration" mnemonicParsing="false" onAction="#loadRegistrationFrom" prefHeight="81.0" prefWidth="177.0" text="Registration">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="sidebar-btn" />
+               </styleClass>
+            </Button>
+            <Button fx:id="btnStudentDetails" layoutX="20.0" layoutY="189.0" mnemonicParsing="false" onAction="#loadStudentDetailsForm" prefHeight="81.0" prefWidth="177.0" styleClass="sidebar-btn" text="Student Details">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPrograms" layoutX="20.0" layoutY="189.0" mnemonicParsing="false" onAction="#loadProgramForm" prefHeight="81.0" prefWidth="177.0" styleClass=".button" text="Programs">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane fx:id="display" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <ImageView fitHeight="702.0" fitWidth="1161.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../img/logo.jpg" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

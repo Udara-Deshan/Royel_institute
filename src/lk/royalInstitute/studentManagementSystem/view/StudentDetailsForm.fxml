@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="710.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.royalInstitute.studentManagementSystem.controller.StudentDetailsFormController">
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Student Details">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Separator prefHeight="6.0" prefWidth="896.0">
+               <HBox.margin>
+                  <Insets top="15.0" />
+               </HBox.margin>
+            </Separator>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Region layoutX="758.0" layoutY="10.0" prefHeight="39.0" prefWidth="57.0" />
+                  <JFXComboBox fx:id="cmbTrainingProgram" labelFloat="true" onAction="#cmdSelectProgram" prefHeight="39.0" prefWidth="731.0" promptText="Select Tranning Program" />
+                  <Region prefHeight="39.0" prefWidth="128.0" />
+                  <JFXTextField fx:id="txtProgramID" labelFloat="true" prefHeight="37.0" prefWidth="337.0" promptText="Program ID" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <Region layoutX="788.0" layoutY="10.0" prefHeight="39.0" prefWidth="107.0" visible="false" />
+                  <JFXTextField fx:id="txtStudentID" labelFloat="true" layoutX="781.0" layoutY="10.0" prefHeight="37.0" prefWidth="337.0" promptText="Student ID" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <TableView fx:id="tblStudentDetails" prefHeight="440.0" prefWidth="1120.0">
+              <columns>
+                <TableColumn fx:id="colStudentID" prefWidth="75.0" text="Student ID" />
+                  <TableColumn fx:id="colRegNo" prefWidth="75.0" text="Reg No" />
+                <TableColumn fx:id="colStudentName" prefWidth="123.0" text="Student Name" />
+                  <TableColumn fx:id="colProgramName" prefWidth="112.33334350585938" text="Program Name" />
+                  <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="151.33334350585938" text="Address" />
+                  <TableColumn fx:id="colContact" minWidth="0.0" prefWidth="151.33334350585938" text="Contact" />
+                  <TableColumn fx:id="colDOB" minWidth="0.0" prefWidth="151.33334350585938" text="Date of Birth" visible="false" />
+                  <TableColumn fx:id="colGender" minWidth="0.0" prefWidth="151.33334350585938" text="Gender" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <VBox.margin>
+                  <Insets right="10.0" />
+               </VBox.margin>
+            </TableView>
+            <JFXButton fx:id="btnStudentInAll" onAction="#seeAll" prefHeight="31.0" prefWidth="194.0" style="-fx-background-color: #008891;" text="Students in All Courses">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXTextArea style="-fx-background-color: #eeecda;" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
