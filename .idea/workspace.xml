@@ -45,6 +45,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -63,6 +74,7 @@
       <workItem from="1610303619979" duration="72000" />
       <workItem from="1610303702040" duration="159000" />
       <workItem from="1610303869239" duration="9000" />
+      <workItem from="1610303893202" duration="168000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610303344677</created>
@@ -78,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610303561488</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <created>1610303950491</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610303950491</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,10 +108,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="688" y="296" width="592" height="522" key="FileChooserDialogImpl" timestamp="1610303857185">
+    <state x="688" y="296" width="592" height="522" key="FileChooserDialogImpl" timestamp="1610303924132">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
-    <state x="688" y="296" width="592" height="522" key="FileChooserDialogImpl/58.27.1862.1053@58.27.1862.1053" timestamp="1610303857185" />
+    <state x="688" y="296" width="592" height="522" key="FileChooserDialogImpl/58.27.1862.1053@58.27.1862.1053" timestamp="1610303924132" />
     <state width="1814" height="274" key="GridCell.Tab.0.bottom" timestamp="1610303610439">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
@@ -113,9 +132,9 @@
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
     <state x="508" y="188" width="962" height="737" key="SettingsEditor/58.27.1862.1053@58.27.1862.1053" timestamp="1610303722327" />
-    <state x="584" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1610303360468">
+    <state x="584" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1610303985760">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
-    <state x="584" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/58.27.1862.1053@58.27.1862.1053" timestamp="1610303360468" />
+    <state x="584" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/58.27.1862.1053@58.27.1862.1053" timestamp="1610303985760" />
   </component>
 </project>
